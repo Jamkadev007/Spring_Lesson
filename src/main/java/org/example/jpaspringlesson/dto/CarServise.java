@@ -1,5 +1,4 @@
 package org.example.jpaspringlesson.dto;
 
-public class Rfgshjk {
-
+public class CarServise {
 }
