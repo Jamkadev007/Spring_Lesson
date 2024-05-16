@@ -1,0 +1,101 @@
+### Create student
+
+POST localhost:8080/student/create
+Content-Type: application/json
+
+{
+  "name": "Jamshidbek",
+  "surname": "Bekmetov",
+  "level": 4,
+  "age": 24,
+  "gender": "MALE"
+}
+
+### Get all
+
+GET localhost:8080/student/all
+
+### Update student
+
+PUT localhost:8080/student/update/2
+Content-Type: application/json
+
+{
+  "name": "Mazgi",
+  "surname": "Mazgiyev",
+  "level": 2,
+  "age": 20,
+  "gender": "MALE"
+
+
+}
+
+### Delete student
+
+DELETE localhost:8080/student/delete/1
+
+
+### By id
+
+GET localhost:8080/student/byid/2
+
+### By name
+GET localhost:8080/student/byname/Alish
+
+### By Surname
+GET  localhost:8080/student/bysurname/Aliyev
+
+### By Level
+
+GET localhost:8080/student/bylevel/3
+
+### By Age
+GET localhost:8080/student/byage/20
+
+### By gender
+
+GET localhost:8080/student/gender/MALE
+
+### By date
+
+GET localhost:8080/student/bydate/2024-05-09
+
+### By between
+
+GET localhost:8080/student/between/2024-05-04/2024-05-13
+
+
+### By age
+
+POST localhost:8080/student/age
+Content-Type: application/json
+
+[
+  18,
+  20,
+  23
+]
+
+
+### Pagination
+GET localhost:8080/student/pagination?page=1&size=3
+
+
+### Pagination with Level
+GET localhost:8080/student/paginationWithLevel/1?page=2&size=2
+
+### Pagination with Gender
+GET localhost:8080/student/paginationWithGender/MALE?page=0&size=2
+
+### Pagination filter
+POST localhost:8080/student/filter?page=3&size=3
+Content-Type: application/json
+
+{
+  "name": "Alish"
+}
+
+
+
+
+

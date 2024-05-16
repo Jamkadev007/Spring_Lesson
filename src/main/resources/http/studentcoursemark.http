@@ -1,0 +1,80 @@
+### Create Mark
+POST localhost:8080/studentCourseMark/create
+Content-Type: application/json
+
+{
+  "studentId": 15,
+  "courseId": 2,
+  "mark": 20
+}
+
+### Update Mark
+PUT localhost:8080/studentCourseMark/update/1
+Content-Type: application/json
+
+{
+  "studentId": 2,
+  "courseId": 2,
+  "mark": 60
+}
+
+
+### Get By Id
+GET localhost:8080/studentCourseMark/byId/1
+
+### Get By Id Detail
+GET localhost:8080/studentCourseMark/byIdDetail/1
+
+### Get all in detail
+GET localhost:8080/studentCourseMark/getAll
+
+### Get By Today
+GET localhost:8080/studentCourseMark/getByDate/2024-05-10
+
+### Get By two Date
+GET localhost:8080/studentCourseMark/getByTwoDate/2024-05-12/2024-05-15
+
+### Get By Sort
+GET localhost:8080/studentCourseMark/getByMarkCreatedDateSort
+
+### Get Last Mark
+GET localhost:8080/studentCourseMark/getLastMark/
+
+### Get Great 3 Mark
+GET localhost:8080/studentCourseMark/getLastThreeMark/15
+
+### Get First Mark
+GET localhost:8080/studentCourseMark/getFirstMark/15
+
+### Get course Mark First
+GET localhost:8080/studentCourseMark/getMarkFirstCourse/15/4
+
+### Get course Mark Great
+GET localhost:8080/studentCourseMark/getGreatMarkStudentCourse/15/4
+
+### Average Student all mark
+GET localhost:8080/studentCourseMark/avg/15
+
+### Average Student Course
+GET localhost:8080/studentCourseMark/getAvgCourse/15/2
+
+
+### Get Than mark
+GET  localhost:8080/studentCourseMark/getThan/15/50
+
+### Get Great Mark By course
+
+GET localhost:8080/studentCourseMark/getGreatMarkByCourse/4
+
+### Get Pagination
+GET localhost:8080/studentCourseMark/pagination
+
+### Get Pagination with sort
+GET localhost:8080/studentCourseMark/paginationWithSort/15
+
+### Get Inner Join with Student Id
+GET localhost:8080/studentCourseMark/MarkByStudentIdInnerJoin/2
+
+### Get Inner Join with Course
+GET localhost:8080/studentCourseMark/MarkByCourseId/2
+

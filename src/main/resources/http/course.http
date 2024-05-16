@@ -1,0 +1,67 @@
+### Create course
+
+POST localhost:8080/course/create
+Content-Type: application/json
+
+{
+  "name": "Math",
+  "price": 500000,
+  "duration": 2
+}
+
+### Get By id Course
+GET localhost:8080/course/byid/1
+
+
+### Get All Courses
+GET localhost:8080/course/all
+
+### Update Courses
+PUT localhost:8080/course/update/1
+Content-Type: application/json
+
+{
+  "name": "Java2",
+  "price": 1200000,
+  "duration": 5
+}
+
+### Delete Course
+
+DELETE localhost:8080/course/delete/1
+
+
+
+### By name
+GET localhost:8080/course/byName/Java
+
+
+### By duration
+GET localhost:8080/course/byDuration/6
+
+
+
+### By Price
+GET localhost:8080/course/byPrice/1000000
+
+
+### By two price Between
+GET localhost:8080/course/BetweenPrice/5000000/15000000
+
+### Pagination
+GET localhost:8080/course/pagination?page=2&size=3
+
+### Pagination With price
+GET localhost:8080/course/paginationByPrice/500000.0?page=0&size=1
+
+
+
+
+
+
+
+
+
+
+
+
